@@ -1,0 +1,127 @@
+/* Beginner-friendly CSS for Charity Water Landing Page */
+
+/* Set a transparent blue background for the whole page */
+body {
+    background-color: rgba(46, 157, 247, 0.5); /* Light transparent blue */
+    margin: 0; /* Remove default margin */
+    font-family: sans-serif; /* Use a simple sans-serif font */
+    text-align: center; /* Center all text */
+}
+
+/* Put a white background only behind the logo at the top */
+.logo-bar {
+    background-color: white; /* White background for the logo area */
+    padding: 20px 0; /* Space above and below the logo */
+}
+
+/* Make the logo smaller and center it */
+.logo {
+    width: 120px; /* Make the logo smaller */
+    height: auto; /* Keep the image's shape */
+    display: block; /* Put the logo on its own line */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+/* Make the main heading bigger */
+.hero h1 {
+    font-size: 2.5em; /* Large title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Make subheading bigger */
+.hero p {
+    font-size: 1.5em; /* Large subheading */
+    margin-bottom: 20px; /* Space below subheading */
+}
+
+/* Make images inside content smaller and centered */
+.impact-image {
+    display: block;
+    margin: 0 auto 20px auto; /* Center and space below */
+    max-width: 80%; /* Not too big */
+    height: auto;
+}
+
+/* Style for the donate button */
+.donate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc40; /* Green background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 25px; /* More rounded corners */
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.donate-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Add space between sections */
+section {
+    margin: 30px 0; /* Space above and below each section */
+}
+
+/* Navigation links: remove bullets and put links in one line */
+.nav-links {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 10px 0 0 0; /* Space above links */
+    text-align: center; /* Center the links */
+}
+
+.nav-links li {
+    display: inline; /* Put list items in one line */
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark color for links */
+    font-weight: bold; /* Make links bold */
+    font-size: 1em; /* Normal size */
+}
+
+/* Future Prospects section */
+.future-prospects {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto 30px auto; /* Center and space below */
+    max-width: 800px; /* Limit width for readability */
+}
+
+.future-prospects h2 {
+    font-size: 2em; /* Slightly smaller than main title */
+    margin-bottom: 15px; /* Space below the section title */
+}
+
+.future-prospects p {
+    font-size: 1.2em; /* Normal paragraph size */
+    line-height: 1.6; /* Spacing between lines */
+    margin: 0; /* Remove default margin */
+}
+
+/* Time to Act section */
+.time-to-act {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto; /* Center the section */
+    max-width: 800px; /* Limit width for readability */
+}
+
+.time-to-act h2 {
+    font-size: 2em; /* Slightly smaller than main title */
+    margin-bottom: 15px; /* Space below the section title */
+}
+
+.time-to-act p {
+    font-size: 1.2em; /* Normal paragraph size */
+    line-height: 1.6; /* Spacing between lines */
+    margin: 0; /* Remove default margin */
+}

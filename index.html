@@ -2,45 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add space between sections */
+        section {
+            margin: 30px 0;
+            padding: 20px 0;
+        }
+
+        /* Add rounded corners and shadow to sections */
+        section, .logo-bar {
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
+        }
+
+        /* Make links change color when hovered */
+        .nav-links a:hover {
+            color: #2E9DF7; /* Blue on hover */
+        }
+
+        /* Make headings bold and larger */
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        /* Add a gentle background color to the whole page */
+        body {
+            background-color: #e3f2fd; /* Very light blue */
+            font-family: Arial, Verdana, Tahoma, sans-serif;
+        }
+
+        /* Add a light blue background to the hero section */
+        .hero {
+            background-color: #bbdefb; /* Slightly darker blue */
+        }
+
+        /* Add a light yellow background to the impact story section */
+        .impact-story {
+            background-color: #fff9c4; /* Soft yellow */
+        }
+
+        /* Style for dropdown menu */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            min-width: 120px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            z-index: 1;
+            text-align: left;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+        }
+        .dropdown-content a:hover {
+            background-color: #bbdefb;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        /* Additional styles for the top links navigation */
+        .top-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .nav-btn {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1em;
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-btn:hover {
+            background-color: #bbdefb;
+        }
+    </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+    <!-- Logo at the top of the page with white background -->
+    <div class="logo-bar">
+        <img src="img/cw_logo.png" alt="Charity Water Logo" class="logo">
+        <!-- Removed About Us link below the logo for simplicity -->
+    </div>
+
+    <!-- Hero Section: Main headline and subheadline -->
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
+        <h1>Transform Lives with Clean Water</h1>
+        <p>Join us in bringing safe drinking water to those in need, one drop at a time.</p>
     </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
+    <!-- About Us Section: Mission and Story together -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <h3>Our Mission</h3>
         <p>
-         
+            We believe everyone deserves access to clean water. Our mission is to make it happen, one community at a time.
+        </p>
+        <h3>Our Story</h3>
+        <p>
+            Charity Water was founded to help people around the world get access to safe, clean drinking water. We work with local partners and communities to build sustainable water projects.
+        </p>
     </section>
 
-    <!-- Real-World Impact Story Section -->
+    <!-- Impact Story Section: Real-world example -->
     <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
+        <h2>Visible Impact : Gondwana Village</h2>
         <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
+            <img src="img/mayi.jpg" alt="Mayi smiling with clean water" class="impact-image">
             <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
+                Gondwana residents lacked drinking water, relying on contaminated sources. After Charity Water's intervention, they now have access to clean water, transforming their health and daily lives. Mariama, a local mother, shares how this change has improved her family's well-being and future prospects.
             </p>
         </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
+    <!-- Future Prospects Section: Organization's future plans -->
+    <section class="future-prospects">
+        <h2>Future Prospects</h2>
+        <p>
+            We aim to expand our clean water projects to more communities in need, ensuring a healthier future for all.
+        </p>
+    </section>
+
+    <!-- Call-to-Action Section: Encourage donations -->
     <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+        <h2>Time to Act</h2>
+        <p>Your gesture counts. Help us bring clean water to those in need.</p>
         <a href="#" class="donate-button">Donate Now</a>
     </section>
 </body>
